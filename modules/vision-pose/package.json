@@ -1,0 +1,26 @@
+{
+  "name": "@visionform/vision-pose",
+  "version": "1.0.0",
+  "description": "Apple Vision Framework pose detection module for VisionForm",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "expo-module build"
+  },
+  "keywords": [
+    "expo",
+    "vision",
+    "pose-detection",
+    "ios",
+    "apple-vision-framework"
+  ],
+  "author": "VisionForm",
+  "license": "MIT",
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "expo-modules-core": "^2.2.2"
+  }
+}

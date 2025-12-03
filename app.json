@@ -7,13 +7,27 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "VisionForm needs camera access to analyze your workout form in real-time using AI pose detection.",
+          "enableCodeScanner": false
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rohanbsher.visionform",
+      "infoPlist": {
+        "NSCameraUsageDescription": "VisionForm needs camera access to analyze your workout form in real-time using AI pose detection.",
+        "NSPhotoLibraryUsageDescription": "VisionForm may save workout session snapshots for your reference."
+      }
     },
     "android": {
       "adaptiveIcon": {
